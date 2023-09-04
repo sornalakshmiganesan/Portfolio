@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    background-image: linear-gradient(darkslateblue,pink);
+}
+.container{
+    background-position: fixed;
+    color: black;
+    background-color:rgb(252, 198, 206);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-clip: content-box;
+    overflow: hidden;
+    }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(59, 55, 55);
+    cursor: pointer;
+}
+
+
+
+.cloud{
+    position:absolute;
+    width: 30%;
+    height: 30%;
+    animation: cloud 5s ease-in-out;
+    top:5%;
+    left:80%;
+    overflow: hidden;
+}
+.cloud1{
+    width: 30%;
+    height: 30%;
+    animation: cloud1 5s ease-in-out;
+    position: absolute;
+    bottom:5%;
+    right:80%;
+    overflow: hidden;
+}
+/* @keyframes cloud {
+    0% {transform: translateX(100px);}
+    100%  {transform:translateX(-50px);}
+
+}
+@keyframes cloud1 {
+    0% {transform: translateX(-50px);}
+    100%  {transform:translateX(100px);}
+
+} */
+.navbar ul{
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    display: flex;
+    margin: 2%;
+}
+.navbar ul li{
+    display: inline;
+    text-decoration: none;
+    font-weight: 600;
+    padding:3%;
+    border: none;
+    margin:1%;
+
+}
+.navbar ul li:hover{
+    border-bottom: dotted lightcyan 2px;
+    
+}
+
+.navbar h1{
+    padding: 3%;
+    font-size: 2rem;
+    font-family: fantasy;
+    font-weight: 300;
+
+}
+
+.heading span,h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    
+}
+.heading h1{
+    font-weight: 600;
+}
+.heading{
+    width: 50%;
+    background-color: beige;
+    color: black;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse; 
+    cursor: pointer;
+    padding: 5%;
+}
+.hide{
+    width:20%;
+    display: block;
+    text-align: center;
+}
+
+
+
+.summer{
+    /* background-color: rgb(31, 31, 31); */
+
+    text-align: center;
+    padding:5%;
+    position: relative;
+
+}
+.rainy{
+    /* background-color: rgb(31, 31, 31); */
+
+    padding:5%;
+    overflow: hidden;
+
+}
+.spring{
+    /* background-color: rgb(31, 31, 31); */
+    padding:5%;
+
+}
+.h2{
+    font-family: cursive;
+    font-weight: 1000;
+    font-size: larger;
+}
+#education{
+ position: relative;
+
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dialogue{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-weight: 500;
+   font-size: large;
+}
+    .school,.college,.career{
+
+    background: linear-gradient(68.8deg, rgb(174, 33, 255) 15.4%, rgb(255, 33, 33) 111.3%);
+    box-shadow: 3px 3px 3px 0 black;
+    
+    width:60%;
+    border: solid 0px;    
+    padding: 3%;
+    text-align: center;
+    color: white;
+    
+}
+.school{
+    position: relative;
+    left:40%;
+}
+
+.spring ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 2%;
+    background-color: lightcoral;
+    color: whitesmoke;
+    margin: 1%;
+    border-radius: 15px;
+}
+.box{
+    border: solid 2px darkslateblue;
+    background-color: darkslateblue;
+    text-align: center;
+    padding: 2%;
+    border-radius: 20px;
+    font-weight: 600;
+    box-shadow: 3px 3px 3px 0 black;
+    margin:2%;
+    
+}
+.box p{
+    color: whitesmoke;
+    font-weight: 600;
+    padding-bottom: 1%;
+    border-bottom: white solid 1px;
+    
+}
+#schoolbus, #degree{
+    width:20%;
+    position: relative;
+}
+#schoolbus{
+    right: 50%;
+    bottom:-5px;
+}
+.about img{
+width:18%;
+border-radius:50%;
+
+margin : 2%;
+
+}
+.intro{
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-image:url(sunset.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 40vh;
+    
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.about{
+    height: 30vh;
+    display: flex;
+    background-color: rgba(0, 0, 0.8, 50%);
+    box-shadow: 0 0 5px 0;
+    backdrop-filter: blur(2px);
+    margin:3%;
+    color: white;
+    
+}
+.about p{
+    margin-top: 8%;
+    text-align: center;
+    padding:2%;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-text-stroke: black 0.1px;
+}
+#school-div,#college-div,#career-div{
+    display: flex;
+    align-items: flex-end;
+}
+#career-div{
+    flex-direction: row-reverse;
+}
+.woman{
+    position: relative;
+    width:30%;
+    bottom:-17px;
+}
+#boxes{
+    color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#grow{
+    width:10%;
+}
+.end{
+    display:flex;
+    flex-direction: row;
+    
+}
+
+#schoolbus,.school,.woman,.career{
+    animation: school 2s ease-in;
+    
+}
+
+@keyframes school 
+{
+ 0%{transform: translateX(300px)}
+100%{transform: translateX(0px);}    
+}
+#degree,.college{
+    animation-delay: 2s;
+    animation: college 2s ease-in 0.3s;
+    
+}
+
+@keyframes college
+{
+ 0%{transform: translateX(-300px)}
+100%{transform: translateX(0px);}    
+}
